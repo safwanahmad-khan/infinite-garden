@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
   <style>
+    
     :root{--paper:#f8f1eb;--paper2:#f2e5dc;--ink:#393630;--muted:#80736b;--rose:#d89da7;--rose-deep:#ad6877;--sage:#a9baa2;--sage-deep:#4c6854;--butter:#f0d9a4;--white:#fffaf5;--line:#e5d6cc;--shadow:0 22px 60px #563a3018;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);overflow-x:hidden}button,input{font:inherit}button{cursor:pointer}a{color:inherit}::selection{background:#eed0d4;color:var(--ink)}
     .grain{position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.1;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.88' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E")}
@@ -31,6 +32,7 @@
     @media(max-width:550px){.site-nav{padding:18px 16px}.brand{font-size:1rem}.nav-pill{display:none}.hero h2{font-size:clamp(2.8rem,14vw,4.5rem)}.ticket{grid-template-columns:1fr;transform:none}.ticket-main{border-right:0;border-bottom:2px dashed #e4c9bc}.ticket-side{border-radius:0 0 15px 15px;padding:18px}.ticket.fly{transform:translateX(130vw) rotate(10deg)}.memory-track{gap:10px}.memory-card{padding:8px 8px 12px}.memory-card figcaption{font-size:.88rem}.garden-art{min-height:340px}.letter-top{font-size:.6rem}.rage-arena{height:235px}.ending-card{border-radius:150px 150px 22px 22px}.behind-scenes{font-size:.82rem}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}body.has-js .reveal{opacity:1;transform:none}}
   </style>
+     <link rel="stylesheet" href="games-upgrade.css">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div><div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
@@ -364,5 +366,6 @@
       }, 1150);
     }
   </script>
+     <script src="games-upgrade.js"></script>
 </body>
 </html>
