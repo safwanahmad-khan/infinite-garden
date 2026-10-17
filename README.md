@@ -1,27 +1,25 @@
-# A little garden for Haivaan ♡
+# A little garden for Haivaan ♡ — complete replacement package
 
-A personal, static apology-gift site adapted around the Infinite Garden starter concept. All page behavior lives in `index.html`; the photos are local assets and are not edited or AI-transformed.
+This is a separate, complete static-site copy. It has not been pushed to GitHub or deployed by the assistant.
 
-## Preview locally
+## Included
+- Fixed secret words: `hkj`, `haivaan ki jaan`, `khan` (case and spaces are ignored)
+- Invalid-password response: `Think again, Haivaan ♡`
+- Four original JPEGs, copied unchanged and referenced from the repository root
+- Apology letter with sequential line reveals
+- Subtle scroll reveals and falling petals
+- Hidden-offscreen YouTube embed starting at 0:50 with a small playback toggle; browser autoplay restrictions can still apply
+- Blooming-flower garden and click-to-plant mini-game
+- Rage meter with a CSS-drawn boy's face that dodges taps
+- Click-to-enlarge photo viewer, invitation ticket, final note, and small charger/laptop behind-the-scenes note
 
-Open `index.html` in a browser, or run a simple static server:
+## Deploy as a replacement
+1. Extract the ZIP.
+2. Open the GitHub repository and choose **Add file → Upload files**.
+3. Upload the contents of this folder to the repository root: `index.html`, `favicon.svg`, and `memory-01.jpeg` through `memory-04.jpeg`.
+4. Commit the files and wait for Vercel to redeploy.
+5. Test the website in a private/incognito browser window.
 
-```bash
-python -m http.server 5500
-```
+Keep all four JPEG files in the same root folder as `index.html`. Do not put the photos into a nested `assets` folder in this version.
 
-Then open `http://localhost:5500`.
-
-## Deploy on Vercel
-
-Import this folder/repository as a static project on Vercel. It does not need a build command or output directory; the `index.html` at the root is the entry page.
-
-## Personal settings
-
-At the top of the script in `index.html`, edit `ACCEPTED_ANSWERS` to your exact accepted nickname spellings. The song embed is configured to start at 50 seconds. The uploaded images are kept as the exact original JPEG bytes in `assets/memory-01.jpeg` through `assets/memory-04.jpeg`.
-
-The password is a fun client-side gate, not real security; visitors could inspect the page source. YouTube playback requires an internet connection and may require a tap if the browser blocks autoplay.
-
-## Credit
-
-The starting repository was forked from Krei Labs' `infinite-garden` project. This version substantially replaces the page experience for a personal gift. See the upstream project for its license and reuse notes: https://github.com/krei-labs/infinite-garden
+Note: the secret-word screen is a playful front-end gate, not actual security. YouTube playback needs an internet connection, and some browsers require a user action or may show limitations for hidden embeds.
